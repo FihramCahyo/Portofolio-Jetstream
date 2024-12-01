@@ -41,7 +41,7 @@
             </ul>
         </div>
         <div class="navbar-end">
-            <a class="btn">Login</a>
+            <a>Login</a>
         </div>
     </div>
 </template>
