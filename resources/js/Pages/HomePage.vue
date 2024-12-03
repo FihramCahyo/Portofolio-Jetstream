@@ -1,6 +1,7 @@
 <script setup>
 import { Head } from "@inertiajs/vue3";
-import Navbar from "../Components/Navbar.vue";
+import Navbar from "@/Components/Navbar.vue";
+import Footer from "@/Components/Footer.vue";
 </script>
 
 <template>
@@ -10,7 +11,7 @@ import Navbar from "../Components/Navbar.vue";
         <Navbar />
 
         <!-- Hero Section -->
-        <section class="container mx-auto bg-base-200 min-h-screen">
+        <section class="container mx-auto bg-base-200 h-full">
             <div class="hero px-6 md:px-24 lg:px-40 py-6 md:py-6 lg:py-12">
                 <div
                     class="hero-content flex-col lg:flex-row-reverse items-center"
@@ -35,8 +36,54 @@ import Navbar from "../Components/Navbar.vue";
             </div>
         </section>
 
+        <!-- Skill Section -->
+        <section class="container mx-auto bg-base-200 h-full">
+            <div class="px-12 md:px-24 lg:px-40 py-6 md:py-6 lg:py-12">
+                <h2 class="text-3xl font-bold mb-8">Skills</h2>
+                <div
+                    class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"
+                >
+                    <img
+                        class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                        src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-white.svg"
+                        alt="Transistor"
+                        width="158"
+                        height="48"
+                    />
+                    <img
+                        class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                        src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-white.svg"
+                        alt="Reform"
+                        width="158"
+                        height="48"
+                    />
+                    <img
+                        class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                        src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-white.svg"
+                        alt="Tuple"
+                        width="158"
+                        height="48"
+                    />
+                    <img
+                        class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+                        src="https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-white.svg"
+                        alt="SavvyCal"
+                        width="158"
+                        height="48"
+                    />
+                    <img
+                        class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+                        src="https://tailwindui.com/plus/img/logos/158x48/statamic-logo-white.svg"
+                        alt="Statamic"
+                        width="158"
+                        height="48"
+                    />
+                </div>
+            </div>
+        </section>
+
         <!-- Project Section -->
-        <section class="container mx-auto bg-base-200 min-h-screen">
+        <section class="container mx-auto bg-base-200 h-full">
             <div class="px-12 md:px-24 lg:px-40 py-6 md:py-6 lg:py-12">
                 <h2 class="text-3xl font-bold mb-8">Projects</h2>
                 <div
@@ -131,15 +178,7 @@ import Navbar from "../Components/Navbar.vue";
         </section>
 
         <!-- Skill Section -->
-        <section class="container mx-auto bg-base-200 min-h-screen">
-            <div class="px-12 md:px-24 lg:px-40 py-6 md:py-6 lg:py-12">
-                <h2 class="text-3xl font-bold mb-8">Skills</h2>
-                <!--  -->
-            </div>
-        </section>
-
-        <!-- Skill Section -->
-        <section class="container mx-auto bg-base-200 min-h-screen">
+        <section class="container mx-auto bg-base-200 h-full">
             <div class="px-12 md:px-24 lg:px-40 py-6 md:py-6 lg:py-12">
                 <h2 class="text-3xl font-bold mb-8">Work Experience</h2>
                 <ul
@@ -259,5 +298,61 @@ import Navbar from "../Components/Navbar.vue";
                 </ul>
             </div>
         </section>
+
+        <!-- Education Section -->
+        <section class="container mx-auto bg-base-200 h-full">
+            <div class="px-12 md:px-24 lg:px-40 py-6 md:py-6 lg:py-12">
+                <h2 class="text-3xl font-bold mb-8">Education</h2>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-4 lg:gap-6"
+                >
+                    <div class="card bg-base-100 w-full h-full shadow-xl">
+                        <div class="card-body items-start text-start pt-4">
+                            <img
+                                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                                alt="Shoes"
+                                class="rounded-xl w-24"
+                            />
+                            <time
+                                class="font-mono italic text-sm md:text-base lg:text-base"
+                                >1920-1925</time
+                            >
+                            <h2
+                                class="card-title text-sm md:text-base lg:text-base"
+                            >
+                                Master's degree in Computer Software Engineering
+                            </h2>
+                            <p class="text-sm md:text-base lg:text-base">
+                                The University of Manchester
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 w-full h-full shadow-xl">
+                        <div class="card-body items-start text-start pt-4">
+                            <img
+                                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                                alt="Shoes"
+                                class="rounded-xl w-24"
+                            />
+                            <time
+                                class="font-mono italic text-sm md:text-base lg:text-base"
+                                >1920-1925</time
+                            >
+                            <h2
+                                class="card-title text-sm md:text-base lg:text-base"
+                            >
+                                Master's degree in Computer Software Engineering
+                            </h2>
+                            <p class="text-sm md:text-base lg:text-base">
+                                The University of Manchester
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <Footer />
     </div>
 </template>
