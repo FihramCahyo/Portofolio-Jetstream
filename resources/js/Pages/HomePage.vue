@@ -6,10 +6,11 @@ import Footer from "@/Components/Footer.vue";
 
 <template>
     <Head title="Home" />
-    <div>
-        <!-- Navbar -->
-        <Navbar />
 
+    <!-- Navbar -->
+    <Navbar />
+    
+    <div class="bg-base-200  ">
         <!-- Hero Section -->
         <section class="container mx-auto bg-base-200 h-full">
             <div class="hero px-6 md:px-24 lg:px-40 py-6 md:py-6 lg:py-12">
@@ -351,8 +352,8 @@ import Footer from "@/Components/Footer.vue";
                 </div>
             </div>
         </section>
-
-        <!-- Footer Section -->
-        <Footer />
     </div>
+
+    <!-- Footer Section -->
+    <Footer />
 </template>
